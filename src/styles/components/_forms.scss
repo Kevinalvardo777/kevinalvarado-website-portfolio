@@ -1,0 +1,91 @@
+.contact-shell {
+  display: block;
+  width: min(44rem, 100%);
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0.5rem;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.contact-shell > div:first-child {
+  padding: 2rem 2rem 0;
+  text-align: center;
+}
+
+.contact-shell > div:first-child p {
+  max-width: 34rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.contact-shell form {
+  display: grid;
+  gap: 1.1rem;
+  padding: 1.5rem 2rem 2rem;
+  border: 0;
+  background: var(--surface-strong);
+}
+
+.contact-field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.contact-field label {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 0.35rem;
+  background: var(--surface-soft);
+  color: var(--text);
+  padding: 0.9rem 1rem;
+  transition: box-shadow 160ms ease, background 160ms ease;
+}
+
+textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  background: rgba(20, 184, 166, 0.08);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.18);
+  outline: none;
+}
+
+.contact-shell .button {
+  width: 100%;
+  border-radius: 0.35rem;
+}
+
+.field-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.82rem;
+}
+
+.form-status {
+  margin-bottom: 0;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .contact-shell > div:first-child,
+  .contact-shell form {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}

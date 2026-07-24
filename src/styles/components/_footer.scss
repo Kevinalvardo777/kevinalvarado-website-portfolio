@@ -1,0 +1,52 @@
+.privacy-banner {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-soft);
+}
+
+.privacy-shell {
+  padding: 1rem 0;
+}
+
+.privacy-shell p,
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  padding: 2.5rem 0;
+  background: #222;
+}
+
+.footer-shell {
+  padding: 0;
+}
+
+.site-footer p {
+  color: #fff;
+}
+
+.loading-spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 720px) {
+  .footer-shell,
+  .privacy-shell {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

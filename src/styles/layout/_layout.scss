@@ -1,0 +1,127 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5.5rem 0;
+  scroll-margin-top: 6rem;
+}
+
+.section .container > h2 {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
+  text-align: center;
+}
+
+.section-kicker {
+  display: inline-flex;
+  margin-bottom: 0.7rem;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-lead {
+  max-width: 44rem;
+  margin: 0 auto 2rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+  text-align: center;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-heading > div {
+  max-width: 48rem;
+}
+
+.section .container > h2::after {
+  position: absolute;
+  bottom: -0.85rem;
+  left: 50%;
+  display: block;
+  width: 5rem;
+  height: 0.25rem;
+  content: '';
+  background: var(--accent);
+  transform: translateX(-50%);
+}
+
+.hero-shell,
+.contact-shell {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.stats-grid,
+.certifications-grid,
+.leadership-grid,
+.tech-stack-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.skills-grid--compact {
+  margin-top: 1rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 860px) {
+  .section {
+    padding: 6rem 0;
+  }
+
+  .hero-shell {
+    grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.55fr);
+    align-items: stretch;
+  }
+
+  .contact-shell {
+    grid-template-columns: minmax(260px, 0.75fr) minmax(360px, 1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100% - 1rem, 1160px);
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
