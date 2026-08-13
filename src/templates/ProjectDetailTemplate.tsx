@@ -1,4 +1,4 @@
-import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProjectTechnologyList from '@/components/molecules/ProjectTechnologyList';
 import type { Project } from '@/types';
@@ -11,6 +11,7 @@ interface ProjectDetailTemplateProps {
 
 export default function ProjectDetailTemplate({ project }: ProjectDetailTemplateProps) {
   const language = useUiStore((state) => state.language);
+  const hasImage = project.image.startsWith('/');
 
   return (
     <article className="project-detail">
@@ -30,19 +31,25 @@ export default function ProjectDetailTemplate({ project }: ProjectDetailTemplate
               </a>
               {project.links.map((link) => (
                 <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="button button--secondary">
-                  <Github size={16} />
+                  <ExternalLink size={16} />
                   {link.label}
                 </a>
               ))}
             </div>
           </div>
-          <div className="project-detail__preview" aria-hidden="true">
-            <div className="project-detail__preview-window">
-              <span />
-              <span />
-              <span />
-              <div />
-            </div>
+          <div className="project-detail__preview">
+            {hasImage ? (
+              <figure className="project-detail__preview-image">
+                <img src={project.image} alt={getLocalizedValue(project.title, language)} />
+              </figure>
+            ) : (
+              <div className="project-detail__preview-window" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+                <div />
+              </div>
+            )}
           </div>
         </div>
       </section>

@@ -72,6 +72,48 @@ export const projects: Project[] = [
     links: [],
   },
   {
+    slug: 'nini-pijamas',
+    title: { es: 'Nini Pijamas', en: 'Nini Pajamas' },
+    summary: {
+      es: 'Aplicacion e-commerce para venta de pijamas en linea con catalogo visual, filtros y detalle de productos.',
+      en: 'E-commerce application for selling pajamas online with a visual catalog, filters and product detail.',
+    },
+    problem: {
+      es: 'La marca necesitaba una experiencia digital clara para exhibir productos, facilitar la busqueda y conectar la intencion de compra con el catalogo.',
+      en: 'The brand needed a clear digital experience to showcase products, support search and connect purchase intent with the catalog.',
+    },
+    solution: {
+      es: 'Desarrolle una interfaz de catalogo responsive con cards de producto, navegacion superior, filtros por categoria y acciones directas para revisar cada prenda.',
+      en: 'I built a responsive catalog interface with product cards, top navigation, category filters and direct actions to review each item.',
+    },
+    responsibilities: [
+      { es: 'Diseno de interfaz e-commerce', en: 'E-commerce interface design' },
+      { es: 'Construccion del catalogo responsive', en: 'Responsive catalog build' },
+      { es: 'Organizacion de productos y filtros', en: 'Product and filter organization' },
+    ],
+    architecture: {
+      es: 'Aplicacion frontend modular orientada a catalogo, con componentes reutilizables para productos, filtros y navegacion.',
+      en: 'Modular catalog-oriented frontend application with reusable components for products, filters and navigation.',
+    },
+    technologies: ['React', 'TypeScript', 'CSS', 'Responsive UI', 'E-commerce'],
+    challenges: [
+      {
+        es: 'Presentar fotografias, precios y categorias en una experiencia limpia sin perder claridad comercial.',
+        en: 'Presenting photos, prices and categories in a clean experience without losing commercial clarity.',
+      },
+    ],
+    learnings: [
+      {
+        es: 'En comercio digital, la jerarquia visual y los filtros simples ayudan a que el usuario encuentre rapido lo que busca.',
+        en: 'In digital commerce, visual hierarchy and simple filters help users quickly find what they need.',
+      },
+    ],
+    image: '/projects/nini-pijamas.png',
+    confidentiality: { es: 'Aplicacion e-commerce', en: 'E-commerce application' },
+    featured: false,
+    links: [{ label: 'Ver sitio', href: 'https://nini-pijamas-frontend.vercel.app/catalogo' }],
+  },
+  {
     slug: 'micrositios-marketing',
     title: { es: 'Micrositios y experiencias digitales de marketing', en: 'Microsites and digital marketing experiences' },
     summary: { es: 'Landing pages y experiencias promocionales conectadas con Salesforce y Marketing Cloud.', en: 'Landing pages and promotional experiences connected to Salesforce and Marketing Cloud.' },

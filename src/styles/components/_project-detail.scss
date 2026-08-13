@@ -88,6 +88,23 @@
   background: repeating-linear-gradient(135deg, var(--surface-soft) 0 0.8rem, transparent 0.8rem 1.2rem);
 }
 
+.project-detail__preview-image {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  box-shadow: 0 28px 80px rgba(24, 24, 27, 0.14);
+}
+
+.project-detail__preview-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .project-detail__body {
   padding-top: 2rem;
 }
