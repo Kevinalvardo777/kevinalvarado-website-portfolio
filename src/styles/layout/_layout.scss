@@ -12,6 +12,14 @@
   scroll-margin-top: 6rem;
 }
 
+.section:nth-of-type(even) {
+  background: rgba(15, 23, 42, 0.025);
+}
+
+:root[data-theme='dark'] .section:nth-of-type(even) {
+  background: rgba(255, 255, 255, 0.025);
+}
+
 .section .container > h2 {
   position: relative;
   display: inline-flex;
@@ -47,6 +55,10 @@
   gap: 1rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.section-heading .button {
+  flex-shrink: 0;
 }
 
 .section-heading > div {

@@ -32,9 +32,7 @@
 }
 
 :root[data-theme='dark'] .hero-shell {
-  background:
-    linear-gradient(135deg, var(--surface-strong), rgba(24, 24, 27, 0.72)),
-    linear-gradient(120deg, rgba(232, 93, 4, 0.12), transparent 48%);
+  background: transparent;
 }
 
 .hero-shell::before {
@@ -132,9 +130,9 @@
 .browser-frame {
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: var(--surface);
-  box-shadow: 0 28px 80px rgba(24, 24, 27, 0.16);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.18);
 }
 
 .browser-frame__bar {
@@ -163,7 +161,7 @@
 
 .browser-frame__hero {
   min-height: 12rem;
-  border-radius: 1.4rem;
+  border-radius: 0.9rem;
   background:
     linear-gradient(135deg, rgba(20, 184, 166, 0.32), transparent 52%),
     linear-gradient(135deg, #0f766e, #0f172a);
@@ -178,7 +176,7 @@
 .browser-frame__grid span {
   min-height: 5.6rem;
   border: 1px solid var(--border);
-  border-radius: 1.2rem;
+  border-radius: 0.75rem;
   background: var(--surface-soft);
 }
 
@@ -188,7 +186,7 @@
   margin-left: auto;
   padding: 1rem;
   border: 1px solid var(--border);
-  border-radius: 1.4rem;
+  border-radius: 0.85rem;
   background: var(--surface-strong);
   box-shadow: 0 22px 60px rgba(24, 24, 27, 0.12);
 }

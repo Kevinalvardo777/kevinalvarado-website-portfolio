@@ -93,6 +93,7 @@
 .project-card::before {
   display: grid;
   min-height: 26rem;
+  grid-row: 1 / span 4;
   place-items: start;
   padding: 2rem;
   color: #ecfeff;
@@ -111,7 +112,6 @@
 }
 
 .project-card h3 {
-  align-self: end;
   margin: 0;
   padding-top: 2.25rem;
   color: var(--text);
@@ -121,6 +121,8 @@
 .project-card p {
   margin: 0;
   padding-top: 1rem;
+  font-size: 0.96rem;
+  line-height: 1.65;
 }
 
 .project-technologies {
